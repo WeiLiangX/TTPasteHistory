@@ -27,6 +27,7 @@
 
 @property (nonatomic, strong) SFBPopover *popOver;
 @property (nonatomic, strong) NSString *bundlePath;
+@property (nonatomic, assign) BOOL bSourceTextInput;    //焦点是否在代码编辑区
 
 @end
 
@@ -46,6 +47,7 @@
 - (instancetype)initWithBundlePath:(NSString*)bundlePath {
     self = [super init];
     self.bundlePath = bundlePath;
+    self.bSourceTextInput = false;
     
     [PasteCacheManager shareObj];
     [PasteHistoryModel shareObj];
@@ -58,6 +60,8 @@
 - (void)onApplicationDidLaunchingFinished:(NSNotification*)notification
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTextViewSelectionDidChangeNotif:) name:@"NSTextViewDidChangeSelectionNotification" object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTextViewDidEndNotif:) name:NSTextDidEndEditingNotification object:nil];
     
     
     __weak __typeof(self) weakself = self;
@@ -72,8 +76,10 @@
             if (_notifObj && [_notifObj isKindOfClass:NSClassFromString(@"DVTSourceTextView")])
             {
                 DVTSourceTextView *sourceTextView = (DVTSourceTextView*)_notifObj;
-                
-                [weakself _showPopOverWithTextView:sourceTextView];
+                if (weakself.bSourceTextInput)
+                {
+                    [weakself _showPopOverWithTextView:sourceTextView];
+                }
             }
         }
         
@@ -90,9 +96,10 @@
 {
     id obj = notification.object;
     // let we know current edit in sourceEdit
-    if (obj)
+    if (obj && [obj isKindOfClass:NSClassFromString(@"DVTSourceTextView")])
     {
         _notifObj = obj;
+        self.bSourceTextInput = YES;
     }
 //    if (obj && [obj isKindOfClass:NSClassFromString(@"DVTSourceTextView")])
 //    {
@@ -103,6 +110,15 @@
 //    {
 //        _textView
 //    }
+}
+
+- (void)onTextViewDidEndNotif:(NSNotification*)notification
+{
+    id obj = notification.object;
+    if (obj && [obj isKindOfClass:NSClassFromString(@"DVTSourceTextView")])
+    {
+        self.bSourceTextInput = NO;
+    }
 }
 
 
@@ -141,10 +157,10 @@
 
 - (void)dealloc
 {
-//    if (_monitor)
-//    {
-//        [NSEvent removeMonitor:_monitor];
-//    }
+    if (_monitor)
+    {
+        [NSEvent removeMonitor:_monitor];
+    }
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
