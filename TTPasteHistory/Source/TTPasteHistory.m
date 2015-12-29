@@ -8,8 +8,8 @@
 
 #import "TTPasteHistory.h"
 #import <Carbon/Carbon.h>
-#import <SFBPopover.h>
 
+#import "SFBPopovers/SFBPopover.h"
 #import "PasteListViewController.h"
 #import "PasteCacheManager.h"
 #import "VVKeyboardEventSender.h"
