@@ -6,9 +6,44 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		05CC2ACB498C0A7DC378A4D7 /* libPods-TTPasteHistory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D374B7F7BC228C589D07217 /* libPods-TTPasteHistory.a */; };
+		073BDB981C3237BC00F455D6 /* VVKeyboardEventSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB8C1C3237BC00F455D6 /* VVKeyboardEventSender.m */; };
+		073BDB991C3237BC00F455D6 /* PasteCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB8E1C3237BC00F455D6 /* PasteCacheManager.m */; };
+		073BDB9A1C3237BC00F455D6 /* PasteHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB901C3237BC00F455D6 /* PasteHistoryModel.m */; };
+		073BDB9B1C3237BC00F455D6 /* PasteListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB921C3237BC00F455D6 /* PasteListTableView.m */; };
+		073BDB9C1C3237BC00F455D6 /* PasteListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB941C3237BC00F455D6 /* PasteListView.m */; };
+		073BDB9D1C3237BC00F455D6 /* PasteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB961C3237BC00F455D6 /* PasteListViewController.m */; };
+		073BDB9E1C3237BC00F455D6 /* PasteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073BDB971C3237BC00F455D6 /* PasteListViewController.xib */; };
+		0760A3751C32302200BFAA6B /* TTPasteHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0760A3741C32302200BFAA6B /* TTPasteHistory.m */; };
+		078D8A181C3239D4009F47EB /* NSObject+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D8A171C3239D4009F47EB /* NSObject+extension.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		073BDB8B1C3237BC00F455D6 /* VVKeyboardEventSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVKeyboardEventSender.h; sourceTree = "<group>"; };
+		073BDB8C1C3237BC00F455D6 /* VVKeyboardEventSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVKeyboardEventSender.m; sourceTree = "<group>"; };
+		073BDB8D1C3237BC00F455D6 /* PasteCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteCacheManager.h; path = Source/PasteCacheManager.h; sourceTree = "<group>"; };
+		073BDB8E1C3237BC00F455D6 /* PasteCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteCacheManager.m; path = Source/PasteCacheManager.m; sourceTree = "<group>"; };
+		073BDB8F1C3237BC00F455D6 /* PasteHistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteHistoryModel.h; path = Source/PasteHistoryModel.h; sourceTree = "<group>"; };
+		073BDB901C3237BC00F455D6 /* PasteHistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteHistoryModel.m; path = Source/PasteHistoryModel.m; sourceTree = "<group>"; };
+		073BDB911C3237BC00F455D6 /* PasteListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteListTableView.h; path = Source/PasteListTableView.h; sourceTree = "<group>"; };
+		073BDB921C3237BC00F455D6 /* PasteListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteListTableView.m; path = Source/PasteListTableView.m; sourceTree = "<group>"; };
+		073BDB931C3237BC00F455D6 /* PasteListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteListView.h; path = Source/PasteListView.h; sourceTree = "<group>"; };
+		073BDB941C3237BC00F455D6 /* PasteListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteListView.m; path = Source/PasteListView.m; sourceTree = "<group>"; };
+		073BDB951C3237BC00F455D6 /* PasteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteListViewController.h; path = Source/PasteListViewController.h; sourceTree = "<group>"; };
+		073BDB961C3237BC00F455D6 /* PasteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteListViewController.m; path = Source/PasteListViewController.m; sourceTree = "<group>"; };
+		073BDB971C3237BC00F455D6 /* PasteListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PasteListViewController.xib; path = Source/PasteListViewController.xib; sourceTree = "<group>"; };
 		0760A36A1C322D2000BFAA6B /* TTPasteHistory.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTPasteHistory.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		0760A36D1C322D2000BFAA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0760A3731C32302200BFAA6B /* TTPasteHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTPasteHistory.h; path = Source/TTPasteHistory.h; sourceTree = "<group>"; };
+		0760A3741C32302200BFAA6B /* TTPasteHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTPasteHistory.m; path = Source/TTPasteHistory.m; sourceTree = "<group>"; };
+		078D8A161C3239D4009F47EB /* NSObject+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+extension.h"; path = "Source/NSObject+extension.h"; sourceTree = "<group>"; };
+		078D8A171C3239D4009F47EB /* NSObject+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+extension.m"; path = "Source/NSObject+extension.m"; sourceTree = "<group>"; };
+		078D8A1D1C327E29009F47EB /* IDEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IDEKit.h; path = Source/XcodeHeader/IDEKit.h; sourceTree = "<group>"; };
+		078D8A1E1C327F0F009F47EB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = Source/PrefixHeader.pch; sourceTree = "<group>"; };
+		4D374B7F7BC228C589D07217 /* libPods-TTPasteHistory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTPasteHistory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A689E18B3E2EB05AF086FA9 /* Pods-TTPasteHistory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTPasteHistory.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTPasteHistory/Pods-TTPasteHistory.release.xcconfig"; sourceTree = "<group>"; };
+		F8B31520CD3513BEA6C0E45D /* Pods-TTPasteHistory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTPasteHistory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTPasteHistory/Pods-TTPasteHistory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,17 +51,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CC2ACB498C0A7DC378A4D7 /* libPods-TTPasteHistory.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073BDB8A1C3237BC00F455D6 /* KeyboardHelper */ = {
+			isa = PBXGroup;
+			children = (
+				073BDB8B1C3237BC00F455D6 /* VVKeyboardEventSender.h */,
+				073BDB8C1C3237BC00F455D6 /* VVKeyboardEventSender.m */,
+			);
+			name = KeyboardHelper;
+			path = Source/KeyboardHelper;
+			sourceTree = "<group>";
+		};
 		0760A3611C322D2000BFAA6B = {
 			isa = PBXGroup;
 			children = (
 				0760A36C1C322D2000BFAA6B /* TTPasteHistory */,
 				0760A36B1C322D2000BFAA6B /* Products */,
+				551097815A143F286CC83091 /* Pods */,
+				1CDAE37521FB2BD529BE7863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,9 +89,52 @@
 		0760A36C1C322D2000BFAA6B /* TTPasteHistory */ = {
 			isa = PBXGroup;
 			children = (
+				078D8A1C1C327DFA009F47EB /* XcodeHeader */,
+				073BDB8A1C3237BC00F455D6 /* KeyboardHelper */,
+				073BDB8D1C3237BC00F455D6 /* PasteCacheManager.h */,
+				073BDB8E1C3237BC00F455D6 /* PasteCacheManager.m */,
+				073BDB8F1C3237BC00F455D6 /* PasteHistoryModel.h */,
+				073BDB901C3237BC00F455D6 /* PasteHistoryModel.m */,
+				073BDB911C3237BC00F455D6 /* PasteListTableView.h */,
+				073BDB921C3237BC00F455D6 /* PasteListTableView.m */,
+				073BDB931C3237BC00F455D6 /* PasteListView.h */,
+				073BDB941C3237BC00F455D6 /* PasteListView.m */,
+				073BDB951C3237BC00F455D6 /* PasteListViewController.h */,
+				073BDB961C3237BC00F455D6 /* PasteListViewController.m */,
+				073BDB971C3237BC00F455D6 /* PasteListViewController.xib */,
 				0760A36D1C322D2000BFAA6B /* Info.plist */,
+				0760A3731C32302200BFAA6B /* TTPasteHistory.h */,
+				0760A3741C32302200BFAA6B /* TTPasteHistory.m */,
+				078D8A161C3239D4009F47EB /* NSObject+extension.h */,
+				078D8A171C3239D4009F47EB /* NSObject+extension.m */,
+				078D8A1E1C327F0F009F47EB /* PrefixHeader.pch */,
 			);
 			path = TTPasteHistory;
+			sourceTree = "<group>";
+		};
+		078D8A1C1C327DFA009F47EB /* XcodeHeader */ = {
+			isa = PBXGroup;
+			children = (
+				078D8A1D1C327E29009F47EB /* IDEKit.h */,
+			);
+			name = XcodeHeader;
+			sourceTree = "<group>";
+		};
+		1CDAE37521FB2BD529BE7863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D374B7F7BC228C589D07217 /* libPods-TTPasteHistory.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		551097815A143F286CC83091 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8B31520CD3513BEA6C0E45D /* Pods-TTPasteHistory.debug.xcconfig */,
+				9A689E18B3E2EB05AF086FA9 /* Pods-TTPasteHistory.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -53,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0760A3701C322D2000BFAA6B /* Build configuration list for PBXNativeTarget "TTPasteHistory" */;
 			buildPhases = (
+				D2976AC4C264553A5F778792 /* Check Pods Manifest.lock */,
 				0760A3661C322D2000BFAA6B /* Sources */,
 				0760A3671C322D2000BFAA6B /* Frameworks */,
 				0760A3681C322D2000BFAA6B /* Resources */,
+				C0C3B2714E455FC889CABD21 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,16 +195,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073BDB9E1C3237BC00F455D6 /* PasteListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0C3B2714E455FC889CABD21 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTPasteHistory/Pods-TTPasteHistory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2976AC4C264553A5F778792 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0760A3661C322D2000BFAA6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073BDB9B1C3237BC00F455D6 /* PasteListTableView.m in Sources */,
+				073BDB981C3237BC00F455D6 /* VVKeyboardEventSender.m in Sources */,
+				073BDB9C1C3237BC00F455D6 /* PasteListView.m in Sources */,
+				0760A3751C32302200BFAA6B /* TTPasteHistory.m in Sources */,
+				073BDB9A1C3237BC00F455D6 /* PasteHistoryModel.m in Sources */,
+				073BDB9D1C3237BC00F455D6 /* PasteListViewController.m in Sources */,
+				073BDB991C3237BC00F455D6 /* PasteCacheManager.m in Sources */,
+				078D8A181C3239D4009F47EB /* NSObject+extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,26 +334,38 @@
 		};
 		0760A3711C322D2000BFAA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B31520CD3513BEA6C0E45D /* Pods-TTPasteHistory.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TTPasteHistory/Source/PrefixHeader.pch";
 				INFOPLIST_FILE = TTPasteHistory/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = tu.TTPasteHistory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
 		};
 		0760A3721C322D2000BFAA6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A689E18B3E2EB05AF086FA9 /* Pods-TTPasteHistory.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TTPasteHistory/Source/PrefixHeader.pch";
 				INFOPLIST_FILE = TTPasteHistory/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = tu.TTPasteHistory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
@@ -242,6 +389,7 @@
 				0760A3721C322D2000BFAA6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
