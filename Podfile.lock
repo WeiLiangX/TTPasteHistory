@@ -1,0 +1,10 @@
+PODS:
+  - SFBPopovers (1.0.0)
+
+DEPENDENCIES:
+  - SFBPopovers (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  SFBPopovers: 540142b97bff0bd6ae736945418ea975e8b25998
+
+COCOAPODS: 0.38.2
