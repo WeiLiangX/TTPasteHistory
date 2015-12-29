@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05CC2ACB498C0A7DC378A4D7 /* libPods-TTPasteHistory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D374B7F7BC228C589D07217 /* libPods-TTPasteHistory.a */; };
 		073BDB981C3237BC00F455D6 /* VVKeyboardEventSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB8C1C3237BC00F455D6 /* VVKeyboardEventSender.m */; };
 		073BDB991C3237BC00F455D6 /* PasteCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB8E1C3237BC00F455D6 /* PasteCacheManager.m */; };
 		073BDB9A1C3237BC00F455D6 /* PasteHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB901C3237BC00F455D6 /* PasteHistoryModel.m */; };
@@ -16,6 +15,7 @@
 		073BDB9D1C3237BC00F455D6 /* PasteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073BDB961C3237BC00F455D6 /* PasteListViewController.m */; };
 		073BDB9E1C3237BC00F455D6 /* PasteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073BDB971C3237BC00F455D6 /* PasteListViewController.xib */; };
 		0760A3751C32302200BFAA6B /* TTPasteHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0760A3741C32302200BFAA6B /* TTPasteHistory.m */; };
+		0774656A1C32E7690082E3D3 /* libSFBPopovers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 077465691C32E7690082E3D3 /* libSFBPopovers.a */; };
 		078D8A181C3239D4009F47EB /* NSObject+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D8A171C3239D4009F47EB /* NSObject+extension.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +37,7 @@
 		0760A36D1C322D2000BFAA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0760A3731C32302200BFAA6B /* TTPasteHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTPasteHistory.h; path = Source/TTPasteHistory.h; sourceTree = "<group>"; };
 		0760A3741C32302200BFAA6B /* TTPasteHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTPasteHistory.m; path = Source/TTPasteHistory.m; sourceTree = "<group>"; };
+		077465691C32E7690082E3D3 /* libSFBPopovers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSFBPopovers.a; path = TTPasteHistory/Lib/libSFBPopovers.a; sourceTree = "<group>"; };
 		078D8A161C3239D4009F47EB /* NSObject+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+extension.h"; path = "Source/NSObject+extension.h"; sourceTree = "<group>"; };
 		078D8A171C3239D4009F47EB /* NSObject+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+extension.m"; path = "Source/NSObject+extension.m"; sourceTree = "<group>"; };
 		078D8A1D1C327E29009F47EB /* IDEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IDEKit.h; path = Source/XcodeHeader/IDEKit.h; sourceTree = "<group>"; };
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05CC2ACB498C0A7DC378A4D7 /* libPods-TTPasteHistory.a in Frameworks */,
+				0774656A1C32E7690082E3D3 /* libSFBPopovers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +124,7 @@
 		1CDAE37521FB2BD529BE7863 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				077465691C32E7690082E3D3 /* libSFBPopovers.a */,
 				4D374B7F7BC228C589D07217 /* libPods-TTPasteHistory.a */,
 			);
 			name = Frameworks;
@@ -144,11 +146,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0760A3701C322D2000BFAA6B /* Build configuration list for PBXNativeTarget "TTPasteHistory" */;
 			buildPhases = (
-				D2976AC4C264553A5F778792 /* Check Pods Manifest.lock */,
 				0760A3661C322D2000BFAA6B /* Sources */,
 				0760A3671C322D2000BFAA6B /* Frameworks */,
 				0760A3681C322D2000BFAA6B /* Resources */,
-				C0C3B2714E455FC889CABD21 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,39 +200,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C0C3B2714E455FC889CABD21 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTPasteHistory/Pods-TTPasteHistory-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2976AC4C264553A5F778792 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0760A3661C322D2000BFAA6B /* Sources */ = {
@@ -343,6 +310,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TTPasteHistory/Source/PrefixHeader.pch";
 				INFOPLIST_FILE = TTPasteHistory/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTPasteHistory/Lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = tu.TTPasteHistory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +333,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TTPasteHistory/Source/PrefixHeader.pch";
 				INFOPLIST_FILE = TTPasteHistory/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TTPasteHistory/Lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = tu.TTPasteHistory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
